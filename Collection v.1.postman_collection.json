@@ -1,0 +1,471 @@
+{
+	"info": {
+		"_postman_id": "d3a70452-c57e-4289-83cf-e6096eccc83c",
+		"name": "Collection v.1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22818026"
+	},
+	"item": [
+		{
+			"name": "Get posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://hr.recruit.liis.su/qa0/v1/api/<tester>/posts",
+					"protocol": "https",
+					"host": [
+						"hr",
+						"recruit",
+						"liis",
+						"su"
+					],
+					"path": [
+						"qa0",
+						"v1",
+						"api",
+						"<tester>",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign-in",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"dasha\",\r\n    \"email\": \"deishadg@yandex.ru\",\r\n    \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hr.recruit.liis.su/qa0/v1/api/deishadg@yandex.ru/sign-in",
+					"protocol": "https",
+					"host": [
+						"hr",
+						"recruit",
+						"liis",
+						"su"
+					],
+					"path": [
+						"qa0",
+						"v1",
+						"api",
+						"deishadg@yandex.ru",
+						"sign-in"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post post",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Im tester\",\r\n    \"content\": \"im good tester\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hr.recruit.liis.su/qa0/v1/api/deishadg@yandex.ru/posts",
+					"protocol": "https",
+					"host": [
+						"hr",
+						"recruit",
+						"liis",
+						"su"
+					],
+					"path": [
+						"qa0",
+						"v1",
+						"api",
+						"deishadg@yandex.ru",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get post",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hr.recruit.liis.su/qa0/v1/api/deishadg@yandex.ru/post/12427",
+					"protocol": "https",
+					"host": [
+						"hr",
+						"recruit",
+						"liis",
+						"su"
+					],
+					"path": [
+						"qa0",
+						"v1",
+						"api",
+						"deishadg@yandex.ru",
+						"post",
+						"12427"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put post",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Testers\",\r\n    \"content\": \"testers everywhere\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hr.recruit.liis.su/qa0/v1/api/deishadg@yandex.ru/post/12427",
+					"protocol": "https",
+					"host": [
+						"hr",
+						"recruit",
+						"liis",
+						"su"
+					],
+					"path": [
+						"qa0",
+						"v1",
+						"api",
+						"deishadg@yandex.ru",
+						"post",
+						"12427"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delet post",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hr.recruit.liis.su/qa0/v1/api/deishadg@yandex.ru/post/12427",
+					"protocol": "https",
+					"host": [
+						"hr",
+						"recruit",
+						"liis",
+						"su"
+					],
+					"path": [
+						"qa0",
+						"v1",
+						"api",
+						"deishadg@yandex.ru",
+						"post",
+						"12427"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get comments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hr.recruit.liis.su/qa0/v1/api/<tester>/comments",
+					"protocol": "https",
+					"host": [
+						"hr",
+						"recruit",
+						"liis",
+						"su"
+					],
+					"path": [
+						"qa0",
+						"v1",
+						"api",
+						"<tester>",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post comment",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"%%%\",\r\n    \"title\": \"yourpostname111\",\r\n    \"post\": 12427\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hr.recruit.liis.su/qa0/v1/api/deishadg@yandex.ru/comments",
+					"protocol": "https",
+					"host": [
+						"hr",
+						"recruit",
+						"liis",
+						"su"
+					],
+					"path": [
+						"qa0",
+						"v1",
+						"api",
+						"deishadg@yandex.ru",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Post comment Copy",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"content\": \"%%%\",\r\n    \"title\": \"yourpostname111\",\r\n    \"post\": 12427\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://hr.recruit.liis.su/qa0/v1/api/deishadg@yandex.ru/comments",
+					"protocol": "https",
+					"host": [
+						"hr",
+						"recruit",
+						"liis",
+						"su"
+					],
+					"path": [
+						"qa0",
+						"v1",
+						"api",
+						"deishadg@yandex.ru",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "basic",
+		"basic": [
+			{
+				"key": "password",
+				"value": "123",
+				"type": "string"
+			},
+			{
+				"key": "username",
+				"value": "admin",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
